@@ -7,6 +7,9 @@ import CreditCard from './components/CreditCard.jsx'
 import Rating from './components/Rating.jsx'
 import DriverCard from './components/DriverCard.jsx'
 import LikeButton from './components/LikeButton.jsx'
+import ClickablePicture from './components/clickablePicture.jsx';
+import Dice from './components/Dice.jsx'
+import Carousel from './components/Carousel';
 
 function IdCard(props) {
   const newHeight = props.height/100
@@ -133,6 +136,32 @@ function App() {
 {/* Iteration 8 */}
 
 <LikeButton /> <LikeButton />
+
+{/* Iteration 9 */}
+
+<h1>Clickable Picture</h1>
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+
+ {/* Iteration 10 */}
+
+<h1>Dice</h1>
+
+<Dice />
+
+
+{/* Iteration 11 */}
+<h1>Carousel</h1>
+<Carousel
+  imgs={[
+    'https://www.piecemaitresse.fr/img/cms/Guide/Malachite/Malachite-brute.jpg',
+    'https://static.wixstatic.com/media/abfc15_2ee2d19b7f7146c8a3854f3866a2d518~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg',
+    'https://lh3.googleusercontent.com/proxy/-F60jdeV3PLhqnT7UFf4QnYyZl0u6n3b-OqcWX2w9xKIpxvKA2kOScDh9CV8-O9ZaWlMLKX8OSgem24ARNesDqAFT1gspqNuegrJWfAXlWiRhN_RojrnmGsEHkm3gQ8',
+    'https://www.rubisnaturels.com/Files/122565/Img/22/Tourmaline-Melon-d-Eau-2-45-CTS-Brute-10-0-x-9-2-x-5-8-mm-Rose-et-Vert-Madag.jpg'
+  ]}
+/>
 
 </React.Fragment>
   );

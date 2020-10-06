@@ -51,3 +51,13 @@ div {
   display: flex;
 }
 
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 10px;
+}
+.bank {
+text-align: end;
+border: none;
+}

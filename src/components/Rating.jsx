@@ -12,7 +12,11 @@ const Rating = (props) => {
     else if (props.children >=3.5 && props.children < 4.5) {
         return (<div>★★★★☆</div>)}
         else return (<div>★★★★★</div>)
-  
-    
+    // return(
+    // <p>
+    //     {'★'.repeat(Math.round(children))}
+    //     {'☆'.repeat(5 - Math.round(children))}
+    // </p>
+    // )
 }
 export default Rating;

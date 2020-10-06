@@ -3,8 +3,8 @@ import React from 'react'
 
 const CreditCard = (props) => {
     return (
-        <div style={{backgroundColor: props.bgColor, color: props.color}}>
-          <div>
+        <div className="credit-card" style={{backgroundColor: props.bgColor, color: props.color}}>
+          <div className="bank">
               {props.type}
           </div>  
           <p>•••• •••• •••• {props.number.substr(-4)}</p>
